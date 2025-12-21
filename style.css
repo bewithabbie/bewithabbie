@@ -6,6 +6,12 @@ nav a { margin: 0 10px; text-decoration: none; color: #4A5D4E; }
 main { max-width: 900px; margin: auto; padding: 20px; }
 .session { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
 .btn { background: #C9D0B2; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #FAF9F6;
+  color: #4A5D4E;
+}
 
 footer {
   margin-top: 60px;
