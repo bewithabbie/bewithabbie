@@ -2,66 +2,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About • Be With Abbie</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About • Be With Abbie</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    @media (max-width: 640px) {
+      .about-layout { grid-template-columns: 1fr; gap: 32px; }
+      .about-photo { order: -1; }
+    }
+
+    .about-photo img {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+      box-shadow: 0 8px 32px rgba(74, 93, 78, 0.15);
+    }
+
+    .about-text h2 {
+      font-style: italic;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-text a {
+      color: var(--sage-deep);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  </style>
 </head>
 <body>
+
 <header>
-<h1>About Be With Abbie</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="upcoming-sessions.html">Upcoming Sessions</a>
-<a href="about.html">About</a>
-</nav>
+  <h1>About Abbie</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="upcoming-sessions.html">Upcoming Sessions</a>
+    <a href="about.html" class="active">About</a>
+    <a href="testimonials.html">Testimonials</a>
+  </nav>
 </header>
 
-
 <main>
-    <section>
-<h2>Breathwork & Somatics</h2>
-    <p> You may have guessed my name is Abbie! I am a certified Breathwork & Somatics Facilitator. I would love for you to take some time to just ~ be ~ with me.
-    <br> </br>
-    Throughout history and across cultures, humans have developed incredibly intelligent ways to bring ourselves into calm. 
-    <br> </br>
-    In recent decades, we have learned how these practices work physiologically, and that is by bringing our nervous system into rest through techniques that allow the body to discharge stored stress,
-    stimulate the vagus nerve, allow ourselves to sink deeply into our body and to give our bodies a reset in order to feel centred and grounded.
-<br> </br>
-    While we now have the scientific understanding of how these techniques work, very few of us are implementing these practices into our lives, and with increasing stressors and fewer outlets that encourage internal connection or development of community, I believe we may be more in need of these practices now than we ever have before.
-    <br> </br>
-    This is very much an embodied practice. We won't be sitting in silence and waiting for calm, we create calm by moving, making noise and breathing deeply. It's after you connect with yourself in this way that the peace and inspiration comes.
-    <br>
-</br>
-    Treat yourself to a group session on a Sunday morning in the cosy surroundings of The Calm Rooms in Monkstown. Gift yourself a new experience, and see what magic awaits! 
-    <br>
-</br>
-        Contact me at hello@bewithabbie.ie if you are interested in a private session.
-        <br>
-</br>
-    This is not just for yogis and experienced meditators, this practice is an accessible method to get you out of your chattering mind and into your body.
-    <br>
-</br>
-     This is a trauma informed practice, together we create a space that feels safe to connect with ourselves deeply, and leave feeling grounded.
-<br>
-</br>
-      If you are interested in a private or one-to-one session, please contact me via email at hello@bewithabbie.ie.
-<br>
-</br>
-   I trained under Anne Marie Kramer of Wild Soul Breathwork & Somatics.
-           </p>
+  <div class="container">
+    <div class="about-layout">
+
+      <div class="about-photo fade-up">
+        <img src="about.jpg" alt="Abbie at the beach with her dog" />
+      </div>
+
+      <div class="about-text fade-up">
+        <h2>Breathwork & Somatics</h2>
+        <div class="divider" style="margin: 16px 0 24px;"></div>
+
+        <p>Breathwork and somatics sound new, but the practices are as old as the hills. Throughout history we have found ways to calm our nervous system by chanting, deep breathing, connecting with nature, and thus connecting to ourselves.</p>
+
+        <p>Recently, many of us have forgotten these practices, and we may have met ourselves at a moment when we need them most.</p>
+
+        <p>At Be With Abbie, I encourage you to take a moment to yourself to do just that — Be. When you give yourself that opportunity, we practice self-care in the truest sense of the term: doing something for yourself so that you can be more present for the people around you.</p>
+
+        <p>This is very much an embodied practice. We won't be sitting in silence and waiting for calm, we create calm by moving, making noise and breathing deeply. It's after you connect with yourself in this way that the peace and inspiration comes.</p>
+
+        <p>Treat yourself to a group session on a Sunday morning in the cosy surroundings of The Calm Rooms in Monkstown, gift yourself a new experience, and see what magic awaits!</p>
+
+        <p>If you are interested in a private or one-to-one session, please let me know via email at <a href="mailto:hello@bewithabbie.ie">hello@bewithabbie.ie</a>.</p>
+
+        <p>I trained under Anne Marie Kramer of Wild Soul Breathwork & Somatics and am certified as a Breathwork & Somatics Facilitator.</p>
+      </div>
+
+    </div>
+  </div>
 </main>
-    </section>
-</body>
-</html>
 
 <footer>
-    <p>
-    Contact:
-    <a href="mailto:hello@bewithabbie.ie">hello@bewithabbie.ie
-     <br> </br>
-    insta/fb/tiktok @bewithabbie
-    </a>
-
-  </p>
+  <p>Contact: <a href="mailto:hello@bewithabbie.ie">hello@bewithabbie.ie</a></p>
+  <p class="social">@bewithabbie on Instagram, Facebook & TikTok</p>
 </footer>
+
+</body>
+</html>
