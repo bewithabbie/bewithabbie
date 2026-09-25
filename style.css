@@ -63,6 +63,12 @@ header h1 {
   letter-spacing: 0.03em;
 }
 
+.site-logo {
+  height: 64px;
+  width: auto;
+  margin-bottom: 12px;
+}
+
 /* ── Nav ── */
 nav {
   display: flex;
