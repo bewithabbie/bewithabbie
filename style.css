@@ -4,15 +4,15 @@
 
 /* ── CSS Variables ── */
 :root {
-  --sage:        #C8D5B9;
-  --sage-dark:   #7a9b7e;
-  --sage-deep:   #4A5D4E;
+  --sage:        #79b0b6;
+  --sage-dark:   #5b939a;
+  --sage-deep:   #2c4a4f;
   --cream:       #faf8f4;
   --warm-white:  #f5f2ec;
-  --text:        #2e3a2f;
-  --text-light:  #6b7d6e;
-  --border:      #dde5d4;
-  --accent:      #8faa82;
+  --text:        #263335;
+  --text-light:  #5f7377;
+  --border:      #d6e3e4;
+  --accent:      #4f8f96;
 }
 
 /* ── Reset & Base ── */
