@@ -473,7 +473,7 @@
     const formatted = dateObj.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 
     document.getElementById('popupTitle').textContent = s.title;
-    document.getElementById('popupDate').textContent = formatted + ' · 10am–12pm';
+    document.getElementById('popupDate').textContent = formatted;
     document.getElementById('popupDesc').textContent = s.description;
     document.getElementById('popupPrice').textContent = '€' + s.price + ' per person';
     document.getElementById('popupLink').href = s.tallyLink;
